@@ -35,6 +35,7 @@ jobs:
       - name: Step 4 - Check version of Github and Java
         run: 
          git --version
+         java-version
 
       - name: Step 5 - Log the postBuild disk space
         run: df
