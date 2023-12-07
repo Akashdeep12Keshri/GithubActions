@@ -41,3 +41,5 @@ jobs:
           echo is java installed ?
           java -version
           echo 
+          echo who is running the script
+          whoami
