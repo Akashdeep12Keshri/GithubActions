@@ -47,7 +47,6 @@ jobs:
           echo 5. What environment variables are available ?
           env
           echo
-          echo 6. What is the workspace location ?
-          $RUNNER_WORKSPACE
+          
           echo 7. How is the disc laid out ?
           df 
