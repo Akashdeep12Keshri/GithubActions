@@ -32,12 +32,15 @@ jobs:
       - name: Step 3 - What is in the folder
         run: ls -a
 
-      - name: Step 4 - Check version of Github and Java
+      - name: Step 4 - Check version of Github 
         run: 
          git --version
-         java-version
+         
+      - name: Step 5 - Check the Java version
+        run:
+          java -version
 
-      - name: Step 5 - Log the postBuild disk space
+      - name: Step 6 - Log the postBuild disk space
         run: df
       
       
