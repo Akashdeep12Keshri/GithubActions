@@ -70,9 +70,7 @@ jobs:
           java -version
 
       - name: Step 6 - Get the Windows Execution policy
-        run:
-          echo Checking the Execution policy
-          Get-ExecutionPolicy
+        run: Get-ExecutionPolicy
 
       - name: Step 7 - List the environmenatl variables in windows 
         run: env
