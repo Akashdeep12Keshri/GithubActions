@@ -23,22 +23,22 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Check the reporsitory under GITHUB_WORKSPACE
-      name: Step 1: Log the preBuild disk space
-      run: df
+      - name: Step1: Log preBiuld disk space
+        run: df
       
-      name: Step 2: Checks-out your repository
-      uses: actions/checkout@v3
+      - name: Step 2: Checks-out your repository
+        uses: actions/checkout@v3
 
-      name: Step 3: What is in the folder
-      run: ls -a
+      - name: Step 3: What is in the folder
+        run: ls -a
 
-      name: Step 4: Check version of Github and Java
-      run: 
+      - name: Step 4: Check version of Github and Java
+        run: 
         git --version
         jave -version
 
-      name: Step 5: Log the postBuild disk space
-      run: df
+      - name: Step 5: Log the postBuild disk space
+        run: df
       
       
 
